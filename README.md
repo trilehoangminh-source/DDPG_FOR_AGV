@@ -80,7 +80,7 @@ The Actor is optimized to maximize the Critic's estimated Q-value. In the PER im
 
 The baseline uses a replay buffer; the PER version ranks experiences using TD-error-based priorities and samples them according to a rank-dependent probability:
 
-$$P(i) = \frac{\operatorname{rank}(i)^{-\alpha}}{\sum_j \operatorname{rank}(j)^{-\alpha}}$$
+$$P(i) = \frac{\text{rank}(i)^{-\alpha}}{\sum_j \text{rank}(j)^{-\alpha}}$$
 
 Importance-sampling weights are applied during Critic training. Priorities are updated from absolute TD errors. The replay implementation uses a binary heap to manage priorities.
 
