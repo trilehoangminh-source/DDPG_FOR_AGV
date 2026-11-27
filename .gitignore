@@ -1,0 +1,17 @@
+# ROS 2 build outputs
+/build/
+/install/
+/log/
+
+# Editor and Python caches
+.vscode/
+__pycache__/
+*.py[cod]
+
+# Local workspace metadata
+/.agents/
+/.aws/
+/.codex/
+/host/.agents/
+/host/.aws/
+/host/.codex/
